@@ -44,6 +44,6 @@ print("\n--- Cleaning Complete ---")
 print(f"Total entries loaded: {len(df)}")
 print(df[['title', 'brand', 'rating_value', 'clean_ingredient_list']].head(2))
 
-# Save our newly structured checkpoint out as a dataframe file for your notebook scripts
+# Save newly cleaned checkpoint out as a dataframe file
 df.to_pickle(os.path.join("data", "cleaned_beauty_data.pkl"))
 print("\nSaved processed data to data/cleaned_beauty_data.pkl!")
